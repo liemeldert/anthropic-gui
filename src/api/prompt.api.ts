@@ -32,6 +32,7 @@ export const submitPrompt = async ({
     headers: {
       'x-api-key': apiKey,
       'Content-Type': 'application/json',
+      'anthropic-version': ANTHROPIC_CONFIG.anthropicVersion,
       accept: 'application/json',
     },
     signal: signal,
